@@ -1,0 +1,185 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; 
+  color: #333;
+}
+
+.navbar {
+  background-color: #1e293b;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #3b82f6; 
+}
+
+.navbar a {
+  color: #e2e8f0;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+#dark-mode-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: white;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto 50px auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px; 
+  padding: 25px;
+  width: 260px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+  border: 1px solid #e2e8f0;
+  text-align: center; /* Centers the images and text nicely */
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.card p {
+  margin-bottom: 15px;
+}
+
+/* --- NEW: Image Styles --- */
+.avatar-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Makes it a perfect circle */
+  object-fit: cover; /* Stops the image from looking squished */
+  margin-bottom: 15px;
+  border: 3px solid #e2e8f0;
+}
+
+.project-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #e2e8f0;
+}
+
+.card-btn {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: white;
+  padding: 8px 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.contact-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+.submit-btn {
+  background-color: #10b981; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e293b;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Dark Mode Overrides */
+.dark-mode {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.dark-mode .hero-section, 
+.dark-mode .card, 
+.dark-mode .contact-box {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+.dark-mode .section-title, 
+.dark-mode .card h3 {
+  color: #f8fafc;
+}
+
+.dark-mode input {
+  background-color: #334155;
+  color: white;
+  border-color: #475569;
+}
+
+.dark-mode .avatar-img,
+.dark-mode .project-img {
+  border-color: #334155; /* Darkens image borders in dark mode */
+}
