@@ -21,6 +21,11 @@ body {
   text-decoration: none;
   margin-right: 20px;
   font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #3b82f6;
 }
 
 #dark-mode-btn {
@@ -31,6 +36,11 @@ body {
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#dark-mode-btn:hover {
+  background-color: #2563eb;
 }
 
 .hero-section {
@@ -67,7 +77,14 @@ body {
   width: 260px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
   border: 1px solid #e2e8f0;
-  text-align: center; /* Centers the images and text nicely */
+  text-align: center; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Very subtle float effect for the whole card */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
@@ -80,14 +97,19 @@ body {
   margin-bottom: 15px;
 }
 
-/* --- NEW: Image Styles --- */
 .avatar-img {
   width: 100px;
   height: 100px;
-  border-radius: 50%; /* Makes it a perfect circle */
-  object-fit: cover; /* Stops the image from looking squished */
+  border-radius: 50%; 
+  object-fit: cover; 
   margin-bottom: 15px;
   border: 3px solid #e2e8f0;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.avatar-img:hover {
+  transform: scale(1.05); 
+  border-color: #3b82f6; 
 }
 
 .project-img {
@@ -109,6 +131,11 @@ body {
   margin-top: 5px;
   margin-right: 5px;
   font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: #2563eb;
 }
 
 .contact-box {
@@ -133,6 +160,12 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box; 
+  transition: border-color 0.3s ease;
+}
+
+input:hover, input:focus {
+  border-color: #3b82f6; 
+  outline: none;
 }
 
 .submit-btn {
@@ -144,6 +177,11 @@ input {
   cursor: pointer;
   width: 100%;
   font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #059669;
 }
 
 .footer {
@@ -181,5 +219,5 @@ input {
 
 .dark-mode .avatar-img,
 .dark-mode .project-img {
-  border-color: #334155; /* Darkens image borders in dark mode */
+  border-color: #334155; 
 }
