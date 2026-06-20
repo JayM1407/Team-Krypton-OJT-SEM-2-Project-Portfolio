@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team Capstone Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="main-body">
+
+  <div class="navbar">
+    <h2>CodeCrafters Agency</h2>
+    <div class="nav-links">
+      <a href="#team-section">Team</a>
+      <a href="#projects-section">Projects</a>
+      <button id="dark-mode-btn">Toggle Theme</button>
+    </div>
+  </div>
+
+  <div class="hero-section">
+    <h1>Welcome to our Portfolio</h1>
+    <p>Building 5 core applications using pure HTML, CSS, and JavaScript.</p>
+  </div>
+
+  <div id="team-section" class="container">
+    <h2 class="section-title">Meet the Team</h2>
+    <div id="team-box" class="flex-row"></div>
+  </div>
+
+  <div id="projects-section" class="container">
+    <h2 class="section-title">Our Projects</h2>
+    <div id="project-box" class="flex-row"></div>
+  </div>
+
+  <div class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-box">
+      <form id="my-form">
+        <label>Name:</label>
+        <input type="text" id="userName" placeholder="Enter your name" required>
+        
+        <label>Email:</label>
+        <input type="text" id="userEmail" placeholder="Enter your email" required>
+        
+        <button type="submit" class="submit-btn">Send Message</button>
+        <p id="error-msg"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Capstone Project - Semester 2</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
