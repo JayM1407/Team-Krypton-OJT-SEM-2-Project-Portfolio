@@ -18,6 +18,7 @@ Responsive Design adapting from mobile to desktop via CSS Flexbox.
 
 Dynamic AI Mockups via URL prompting.
 
+
 The Core Projects Suite:
 
 Interactive Quiz App
@@ -30,14 +31,15 @@ GitHub Explorer
 
 Kanban Task Board
 
+
 The Team:
 
 Yashraj Dhakad
 
-Jay Mehta
-
 Rushikesh Kamble
 
 Ayush Karanjiya
+
+Jay Mehta
 
 Developed for the Semester 2 Advanced JavaScript Capstone.
